@@ -5,24 +5,61 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="css/main.css" rel="stylesheet" >
-    <link href="css/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/animate.css">
     <script src="js/vendor/jquery-3.1.1.min.js"></script>
     <title>Piatnitskiy A</title>
 </head>
+<!-- потом боди будет присваиваться класс для замены фона -->
 <body>
-    <div class="wrapper__start">
-        <div class="start">
+    <div class="start">
+        <div class="start__wrapper">
             <img class="start__img" src="img/content/Me.png" alt="My photo">
             <h2>Андрей Пятницкий</h2>
-            <div class="start__switc">
-                <a href="">Перейти на сайт</a>
+            <div class="start__switch">
+                <a href="#" id="switch">Перейти на сайт</a>
             </div>
         </div>
     </div>
-    <div class="wrapper__about"></div>
-    <div class="wrapper__career"></div>
-    <div class="wrapper__portfolio"></div>
+    <div class="about">
+        <header class="header">
+            <div class="wrapper">
+                <div class="header__person">
+                    <img src="img/content/Me.png" alt="" class="header__person__ava">
+                    <span class="header__person__name">Пятницкий Андрей</span>
+                </div>
+                    <div class="header__contacts">
+                    <span class="header__contacts_desc">Мои контакты</span>
+                </div>
+            </div>
+        </header>
+        <div class="about">
+            <div class="wrapper">
+                <aside class="aside">
+                    <ul class="aside__menu">
+                        <li class="aside__menu__item active"><a href="#">Обо мне</a></li>
+                        <li class="aside__menu__item"><a href="#">Карьерный путь</a></li>
+                        <li class="aside__menu__item"><a href="#">Портфолио</a></li>
+                    </ul>
+                </aside>
+                <img class="about__ava" src="img/content/Me_big.png" alt="">
+                <div class="about_desc">
+                    <h1>Обо мне</h1>
+                    <p>Доброго всем времени суток!<br>
+                    Мне 31 , проживаю в городе Бердичев(Украина).
+                    Имею 10-ти летний опыт работы в банковской системе...</p>
+                    <p>Хватит !<br>
+                    Нацелен на изменение сферы деятельности
+                    <h3>Пора быть там где развитие!</h3>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="career"></div>
+    <div class="portfolio"></div>
     <script src="js/main.js"></script>
 </body>
 </html>
