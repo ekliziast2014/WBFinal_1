@@ -9,6 +9,7 @@ $('#switch').click(function () {
     $('body').addClass('content');
     elem.addClass('hide');
     $('.about').addClass('show');
+    $('.footer').addClass('show');
 
 });
 

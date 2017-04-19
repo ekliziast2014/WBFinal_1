@@ -11,9 +11,9 @@
     <script src="js/vendor/jquery-3.1.1.min.js"></script>
     <title>Piatnitskiy A</title>
 </head>
-<!-- потом боди будет присваиваться класс для замены фона -->
-<body>
-    <div class="start">
+<!-- Для проверки убрать класс!-->
+<body class="">
+    <section class="start">
         <div class="start__wrapper">
             <img class="start__img" src="img/content/Me.png" alt="My photo">
             <h2>Андрей Пятницкий</h2>
@@ -21,8 +21,9 @@
                 <a href="#" id="switch">Перейти на сайт</a>
             </div>
         </div>
-    </div>
-    <div class="about">
+    </section>
+    <div class="technic">
+    <section class="about">
         <header class="header">
             <div class="wrapper">
                 <div class="header__person">
@@ -34,32 +35,39 @@
                 </div>
             </div>
         </header>
-        <div class="about">
-            <div class="wrapper">
-                <aside class="aside">
-                    <ul class="aside__menu">
-                        <li class="aside__menu__item active"><a href="#">Обо мне</a></li>
-                        <li class="aside__menu__item"><a href="#">Карьерный путь</a></li>
-                        <li class="aside__menu__item"><a href="#">Портфолио</a></li>
-                    </ul>
-                </aside>
-                <img class="about__ava" src="img/content/Me_big.png" alt="">
-                <div class="about_desc">
-                    <h1>Обо мне</h1>
-                    <p>Доброго всем времени суток!<br>
+        <div class="wrapper">
+            <aside class="aside">
+                <ul class="aside__menu">
+                    <li class="aside__menu__item active"><a class="me" href="#">Обо мне</a></li>
+                    <li class="aside__menu__item"><a class="path" href="#">Карьерный путь</a></li>
+                    <li class="aside__menu__item"><a class="portf" href="#">Портфолио</a></li>
+                </ul>
+            </aside>
+            <img class="about__ava" src="img/content/Me_big.png" alt="">
+            <div class="about_desc">
+                <h1>Обо мне</h1>
+                <p>Доброго всем времени суток!<br>
                     Мне 31 , проживаю в городе Бердичев(Украина).
                     Имею 10-ти летний опыт работы в банковской системе...</p>
-                    <p>Хватит !<br>
+                <p>Хватит !<br>
                     Нацелен на изменение сферы деятельности
-                    <h3>Пора быть там где развитие!</h3>
-
-
-                </div>
+                <h3>Пора быть там где развитие!</h3>
             </div>
         </div>
+    </section>
+    <section class="career"></section>
+    <section class="portfolio"></section>
     </div>
-    <div class="career"></div>
-    <div class="portfolio"></div>
+    <footer class="footer">
+        <div class="wrapper">
+            <span class="footer__text">&copy Дизайн сайта был разработан в школе Loftschool</span>
+            <div class="footer__social">
+                <a class="footer__social__fb" href="#"></a>
+                <a class="footer__social__vk" href="#"></a>
+                <a class="footer__social__tw" href="#"></a>
+            </div>
+        </div>
+    </footer>
     <script src="js/main.js"></script>
 </body>
 </html>

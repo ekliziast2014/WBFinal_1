@@ -4,24 +4,25 @@
     -o-box-sizing: border-box;
     box-sizing: border-box;
 }
+html,
 body{
     width: 100%;
     height: 100%;
+}
+body{
     margin: 0;
     padding: 0;
     font: normal 300 18px/28px FiraSans;
     color: #414141;
     background: url("../img/bg/background.png");
 }
-body.content{
-    background: #f6f6f6;
-}
+/*Стили стартовой*/
 .start{
     max-width: 300px;
     min-height: 233px;
     margin: 220px auto;
     position: relative;
-    /* Временно пока верстаю */
+    /* Для проверки поставить дисплей блок*/
     display: block;
 }
 .start__wrapper{
@@ -69,8 +70,12 @@ h2{
     -moz-border-radius:;
     border-radius: 20px;
 }
+/*Конец стилей стартовой*/
+
+/*Стили страниц*/
 .about{
-    background: #f6f6f6;
+    height: 100%;
+/*Для проверки ставить display none*/
     display: none;
 }
 .career{
@@ -79,6 +84,12 @@ h2{
 .portfolio{
     display: none;
 }
+.footer{
+    display: none;
+}
+/*Конец стилей страниц*/
+
+/*Стиль страницы about*/
 header.header{
     width: 100%;
     height: 80px;
@@ -86,6 +97,7 @@ header.header{
     background: #ffffff;
 }
 .wrapper{
+    height: 100%;
     max-width: 940px;
     margin: 0 auto;
     display: flex;
@@ -146,10 +158,27 @@ ul{
 .aside__menu__item a{
     display: block;
     text-decoration: none;
-    font: normal 500 18px/24px FiraSans;
+    font: normal 400 18px/24px FiraSans;
     color: #414141;
 }
+
+.aside__menu__item a.me::before {
+    content: "\f21b";
+    margin-right: 10px;
+}
+.aside__menu__item a.path::before {
+    content: "\f135";
+    margin-right: 10px;
+}
+.aside__menu__item a.portf::before {
+    content: "\f0b1";
+    margin-right: 10px;
+}
 .aside__menu__item.active a{
+    color: #33c1e3;
+    /*font-family:"FiraSans-Bold";*/
+}
+.aside__menu__item a:hover{
     color: #33c1e3;
 }
 .about__ava{
@@ -159,7 +188,6 @@ ul{
     padding: 2px;
     border-radius: 50%;
     margin-left: 55px;
-
 }
 .about_desc{
     max-width: 380px;
@@ -187,9 +215,51 @@ h1{
     line-height: 45px;
     margin: 0;
 }
+.technic {
+    min-height: 100%;
+}
+.technic::after{
+    content: '';
+    height: 50px;
+    display: block;
+}
+.footer{
+    width: 100%;
+    height: 50px;
+    margin-top: -50px;
+    background: #414141;
+    color: #929292;
+}
+.footer .wrapper{
+    height: 100%;
+    align-items: center;
+    font-size: 14px;
+}
+.footer__social{
+    width: 105px;
+    display: flex;
+    justify-content:space-between;
+}
+.footer__social a {
+    width: 31px;
+    height: 30px;
+    background: url("../img/icons/social_bt.png");
+}
+a.footer__social__fb {background-position: left bottom;}
+a.footer__social__fb:hover {background-position-y: top;}
+a.footer__social__vk {background-position: -38px bottom;}
+a.footer__social__vk:hover {background-position-y: top;}
+a.footer__social__tw {background-position: right bottom;}
+a.footer__social__tw:hover {background-position-y: top;}
+
+/*Стили изменяемые JQ*/
+body.content{
+    background: #f6f6f6;
+}
 .hide{
     display: none;
 }
 .show{
     display: block;
 }
+/*Конец стилей JQ*/
