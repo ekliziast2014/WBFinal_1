@@ -12,7 +12,7 @@ body{
 body{
     margin: 0;
     padding: 0;
-    font: normal 300 18px/28px FiraSans;
+    font: normal 18px/28px FiraSans-Light;
     color: #414141;
     background: url("../img/bg/background.png");
 }
@@ -49,7 +49,7 @@ h2{
     margin: 0;
     background: #ffffff;
     padding: 90px 75px 10px;
-    font: normal 500 21px/28px FiraSans;
+    font: normal 21px/28px FiraSans-Medium;
 }
 .start__switch{
     height: 80px;
@@ -64,15 +64,22 @@ h2{
     padding-top: 5px;
     text-decoration: none;
     color: #ffffff;
-    font: normal 700 14px/28px FiraSans;
+    font: normal 14px/28px FiraSans-Bold;
     border:2px solid #ffffff;
     -webkit-border-radius:;
     -moz-border-radius:;
     border-radius: 20px;
 }
+.start__switch a:hover{
+    color: #33c1e3;
+    background: #ffffff;
+}
 /*Конец стилей стартовой*/
 
 /*Стили страниц*/
+.start{
+    display: none;
+}
 .about{
     height: 100%;
 /*Для проверки ставить display none*/
@@ -120,20 +127,20 @@ header.header{
 }
 .header__person__name {
     margin-left: 20px;
-    font-weight: 400;
+    font-family:FiraSans-Regular;
 }
 .header__contacts{
     display: flex;
     align-items: center;
 }
-.header__contacts_desc {
+.header__contacts_title {
     color: #33c1e3;
     text-decoration: none;
-    font-weight: 700;
+    font-family: FiraSans-Bold;
     border-bottom: 2px dotted #33c1e3;
     cursor: pointer;
 }
-.header__contacts_desc:hover{
+.header__contacts_title:hover{
     color: #e85f61;
     border-bottom: 2px dashed #e85f61;
 }
@@ -141,44 +148,51 @@ ul{
     margin: 0;
     padding: 0;
 }
-.aside__menu{
+.nav__menu{
     width: 225px;
     list-style: none;
     text-align: right;
 
 }
-.aside__menu__item{
+.nav__menu__item{
     height: 45px;
     padding-right: 25px;
     padding-top:11px;
 }
-.aside__menu__item.active{
+.nav__menu__item.active{
+    font-family: FiraSans-Bold;
     border-right:6px solid #33c1e3;
 }
-.aside__menu__item a{
+.nav__menu__item.active a {
+    font-family: FiraSans-Bold;
+}
+.nav__menu__item a{
     display: block;
     text-decoration: none;
-    font: normal 400 18px/24px FiraSans;
+    font: normal 18px/24px FiraSans-Regular;
     color: #414141;
 }
 
-.aside__menu__item a.me::before {
+.nav__menu__item a.me::before {
+    font-family: FontAwesome;
     content: "\f21b";
     margin-right: 10px;
 }
-.aside__menu__item a.path::before {
+.nav__menu__item a.path::before {
+    font-family: FontAwesome;
     content: "\f135";
     margin-right: 10px;
 }
-.aside__menu__item a.portf::before {
+.nav__menu__item a.portf::before {
+    font-family: FontAwesome;
     content: "\f0b1";
     margin-right: 10px;
 }
-.aside__menu__item.active a{
+.nav__menu__item a:hover,
+.nav__menu__item.active a{
     color: #33c1e3;
-    /*font-family:"FiraSans-Bold";*/
 }
-.aside__menu__item a:hover{
+.nav__menu__item a:hover{
     color: #33c1e3;
 }
 .about__ava{
@@ -189,25 +203,58 @@ ul{
     border-radius: 50%;
     margin-left: 55px;
 }
-.about_desc{
+.about__description{
+    margin-left: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.about__description_text{
     max-width: 380px;
     max-height: 320px;
     overflow-y: scroll;
     line-height: 1.42;
-    margin-left: 55px;
+    margin-bottom: 60px;
 }
-.about_desc::-webkit-scrollbar {
+.about__description_text::-webkit-scrollbar {
     width: 5px;
 }
-.about_desc::-webkit-scrollbar-track {
+.about__description_text::-webkit-scrollbar-track {
     -webkit-border-radius: 5px;
     border-radius: 5px;
 }
 
-.about_desc::-webkit-scrollbar-thumb {
+.about__description_text::-webkit-scrollbar-thumb {
     -webkit-border-radius: 5px;
     border-radius: 5px;
     background: #d8d8d8;
+}
+.about__description_link{
+    width: 173px;
+    height: 40px;
+    color: #e85f61;
+    padding: 5px 15px;
+    font: bold 14px/28px "Open Sans";
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    border:2px solid #e85f61;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+.about__description_link:hover{
+    background: #e85f61;
+    color: #ffffff;
+}
+.about__description_link:before {
+    font-family: FontAwesome;
+    color: #e85f61;
+    content: "\f019";
+    margin-right: 10px;
+}
+.about__description_link:hover:before {
+    color: #ffffff;
 }
 h1{
     font-size: 35px;

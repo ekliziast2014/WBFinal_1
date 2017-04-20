@@ -1,13 +1,13 @@
 var elem = $('.start');
 $(document).ready(function () {
     console.log( 'Привет, рад видеть ! Анимация подключена !' );
-    elem.addClass('myAnimation');
-    elem.addClass('slideInDown');
+    elem.addClass('show myAnimation slideInDown');
+
 });
 $('#switch').click(function () {
     console.log( 'KKKK' );
     $('body').addClass('content');
-    elem.addClass('hide');
+    elem.removeClass('show');
     $('.about').addClass('show');
     $('.footer').addClass('show');
 
