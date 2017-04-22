@@ -1,10 +1,10 @@
 var elemSt = $('.start');
 // Для проверки 1-я ф-ция должна быть закоментирована
-// $(document).ready(function () {
-//     console.log( 'Привет, рад видеть ! Анимация подключена !' );
-//     elemSt.addClass('show myAnimation slideInDown');
-//
-// });
+$(document).ready(function () {
+    console.log( 'Привет, рад видеть ! Анимация подключена !' );
+    elemSt.addClass('show myAnimation slideInDown');
+
+});
 $('#switch').click(function () {
     $('body').addClass('content');
     elemSt.removeClass('show');

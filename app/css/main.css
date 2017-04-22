@@ -94,7 +94,7 @@ h2 {
 }
 .technic {
     min-height: 100%;
-    display: block;
+    display:  none;
 }
 .technic::after{
     content: '';
@@ -104,7 +104,7 @@ h2 {
 }
 
 .header {
-    display: block;
+    display: none;
 }
 
 .about {
@@ -116,11 +116,11 @@ h2 {
 }
 
 .portfolio {
-    display: block;
+    display: none;
 }
 
 .footer {
-    display: block;
+    display: none;
 }
 
 /*Конец стилей страниц*/
@@ -183,7 +183,7 @@ header.header {
     border-bottom: 2px dashed #e85f61;
 }
 .header__contacts-detail{
-    /*display: none;*/
+    display: none;
     position: absolute;
     top: 70px;
     right: 130px;
