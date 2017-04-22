@@ -8,7 +8,7 @@ $(document).ready(function () {
 $('#switch').click(function () {
     $('body').addClass('content');
     elemSt.removeClass('show');
-    $('.technic').addClass('show');
+    $('.main').addClass('show');
     $('.header').addClass('show');
     $('.about').addClass('show');
     $('.footer').addClass('show');
@@ -16,13 +16,16 @@ $('#switch').click(function () {
 $('.me').click(function () {
     $('section[class !=".about"]').removeClass('show');
     $('.about').addClass('show');
+    console.log( "This is about section" );
 });
 $('.path').click(function () {
     $('section[class !=".career"]').removeClass('show');
     $('.career').addClass('show');
+    console.log( "This is career section" );
 });
 $('.portf').click(function () {
     $('section[class !=".portfolio"]').removeClass('show');
     $('.portfolio').addClass('show');
+    console.log( "This is portfolio section" );
 });
 
