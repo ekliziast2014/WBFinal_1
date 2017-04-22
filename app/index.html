@@ -5,14 +5,15 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/jquery-3.1.1.min.js"></script>
     <title>Piatnitskiy A</title>
 </head>
 <!-- Для проверки убрать класс!-->
-<body class="">
+<body class="content">
     <section class="start">
         <div class="start__wrapper">
             <img class="start__img" src="img/content/Me.png" alt="My photo">
@@ -24,42 +25,170 @@
     </section>
 <!-- Блок-обертка для фиксации footer -->
     <div class="technic">
-    <section class="about">
         <header class="header">
             <div class="wrapper">
                 <div class="header__person">
                     <img src="img/content/Me.png" alt="" class="header__person__ava">
                     <span class="header__person__name">Пятницкий Андрей</span>
                 </div>
-                    <div class="header__contacts">
+                <div class="header__contacts">
                     <span class="header__contacts_title">Мои контакты</span>
-                </div>
+                    <div class="header__contacts-detail">
+                        <ul class="contacts-detail__box">
+                            <li class="box__item post">ggsd</li>
+                            <li class="box__item phone">fsdf</li>
+                            <li class="box__item skype">fsfs</li>
+                        </ul>
+                    </div>
             </div>
         </header>
-        <div class="wrapper">
-            <aside class="nav">
-                <ul class="nav__menu">
-                    <li class="nav__menu__item active"><a class="me" href="#">Обо мне</a></li>
-                    <li class="nav__menu__item"><a class="path" href="#">Карьерный путь</a></li>
-                    <li class="nav__menu__item"><a class="portf" href="#">Портфолио</a></li>
-                </ul>
-            </aside>
-            <img class="about__ava" src="img/content/Me_big.png" alt="">
-            <div class="about__description">
-                <div class="about__description_text">
-                    <h1>Обо мне</h1>
-                    <p>Доброго всем времени суток!<br>
-                        Мне 31 , проживаю в городе Бердичев(Украина).
-                        Имею 10-ти летний опыт работы в банковской системе...</p>
-                    <p>Хватит !<br>
-                        Нацелен на изменение сферы деятельности
-                    <h3>Пора быть там, где развитие!</h3>
+        <section class="about">
+            <div class="wrapper">
+                <aside class="nav">
+                    <ul class="nav__menu">
+                        <li class="nav__menu__item active"><a class="me" href="#">Обо мне</a></li>
+                        <li class="nav__menu__item"><a class="path" href="#">Карьерный путь</a></li>
+                        <li class="nav__menu__item"><a class="portf" href="#">Портфолио</a></li>
+                    </ul>
+                </aside>
+                <img class="about__ava" src="img/content/Me_big.png" alt="">
+                <div class="about__description">
+                    <div class="about__description_text">
+                        <h1>Обо мне</h1>
+                        <p>Доброго всем времени суток!<br>
+                            Мне 31 , проживаю в городе Бердичев(Украина).
+                            Имею 10-ти летний опыт работы в банковской системе...</p>
+                        <p>Хватит !<br>
+                            Нацелен на изменение сферы деятельности
+                        <h3>Пора быть там, где развитие!</h3>
+                    </div>
+                    <a href="#" type="download" class="about__description_link">Скачать резюме</a>
                 </div>
-                <a href="#" type="download" class="about__description_link">Скачать резюме</a>
+        </section>
+        <section class="career">
+            <div class="wrapper">
+                <aside class="nav">
+                    <ul class="nav__menu">
+                        <li class="nav__menu__item"><a class="me" href="#">Обо мне</a></li>
+                        <li class="nav__menu__item active"><a class="path" href="#">Карьерный путь</a></li>
+                        <li class="nav__menu__item"><a class="portf" href="#">Портфолио</a></li>
+                    </ul>
+                </aside>
+                <div class="career__description-box">
+                    <div class="career__description-box_title">Карьерный путь</div>
+                    <div class="career__description-box_detail">
+                        <div class="career__img"></div>
+                        <ul class="career__data">
+                            <div class="career__data_block">
+                            <li class="career__data_item">
+                                <h3 class="career__data_item-where">ООО «Звезды путешествий»</h3>
+                                <div class="career__data_item-position">Системный Администратор</div>
+                                <div class="career__data_item-when">2015 - по настоящее время</div>
+                                <div class="career__data_item-indicator">2015</div>
+                                <div class="career__data_item-indicator circle"></div>
+                                <div class="career__data_item-indicator circle-big"></div>
+                                <div class="career__data_item-indicator-line"></div>
+                            </li>
+                            </div>
+                            <div class="career__data_block">
+                            <li class="career__data_item">
+                                <h3 class="career__data_item-where">ООО «Звезды путешествий»</h3>
+                                <div class="career__data_item-position">Системный Администратор</div>
+                                <div class="career__data_item-when">2015 - по настоящее время</div>
+                                <div class="career__data_item-indicator">2015</div>
+                                <div class="career__data_item-indicator circle"></div>
+                                <div class="career__data_item-indicator circle-big"></div>
+                                <div class="career__data_item-indicator-line"></div>
+                            </li>
+                            </div>
+                            <div class="career__data_block">
+                            <li class="career__data_item">
+                                <h3 class="career__data_item-where">ООО «Звезды путешествий»</h3>
+                                <div class="career__data_item-position">Системный Администратор</div>
+                                <div class="career__data_item-when">2015 - по настоящее время</div>
+                                <div class="career__data_item-indicator">2015</div>
+                                <div class="career__data_item-indicator circle"></div>
+                                <div class="career__data_item-indicator circle-big"></div>
+                                <div class="career__data_item-indicator-line"></div>
+                            </li>
+                            </div>
+                            <div class="career__data_block">
+                            <li class="career__data_item">
+                                <h3 class="career__data_item-where">ООО «Звезды путешествий»</h3>
+                                <div class="career__data_item-position">Системный Администратор</div>
+                                <div class="career__data_item-when">2015 - по настоящее время</div>
+                                <div class="career__data_item-indicator">2015</div>
+                                <div class="career__data_item-indicator circle"></div>
+                                <div class="career__data_item-indicator circle-big"></div>
+                            </li>
+                            </div>
+
+                        </ul>
+                    </div>
             </div>
-    </section>
-    <section class="career"></section>
-    <section class="portfolio"></section>
+        </section>
+        <section class="portfolio">
+            <div class="wrapper">
+                <aside class="nav">
+                    <ul class="nav__menu">
+                        <li class="nav__menu__item"><a class="me" href="#">Обо мне</a></li>
+                        <li class="nav__menu__item"><a class="path" href="#">Карьерный путь</a></li>
+                        <li class="nav__menu__item active"><a class="portf" href="#">Портфолио</a></li>
+                    </ul>
+                </aside>
+                <div class="portfolio__description-box">
+                    <div class="portfolio__description-box_title">Портфолио</div>
+                    <div class="portfolio__description-box_detail">
+                        <div class="portfolio__data-colum">
+                            <div class="portfolio__data_item">
+                                <div class="portfolio__data_item-top"></div>
+                                <div class="portfolio__data_item-bottom">
+                                    <div class="item-title">Dream-scapes</div>
+                                    <div class="item-features">Лагуна Люфтганза</div>
+                                    <div class="item-type">Лендинг</div>
+                                </div>
+                            </div>
+                            <div class="portfolio__data_item">
+                                <div class="portfolio__data_item-top"></div>
+                                <div class="portfolio__data_item-bottom">
+                                    <div class="item-title">Dream-scapes</div>
+                                    <div class="item-features">Лагуна Люфтганза</div>
+                                    <div class="item-type">Лендинг</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio__data-colum">
+                            <div class="portfolio__data_item some">
+                                <div class="portfolio__data_item-top"></div>
+                                <div class="portfolio__data_item-bottom">
+                                    <div class="item-title">Dream-scapes</div>
+                                    <div class="item-features">Лагуна Люфтганза</div>
+                                    <div class="item-type">Лендинг</div>
+                                </div>
+                            </div>
+                            <div class="portfolio__data_item">
+                                <div class="portfolio__data_item-top"></div>
+                                <div class="portfolio__data_item-bottom">
+                                    <div class="item-title">Dream-scapes</div>
+                                    <div class="item-features">Лагуна Люфтганза</div>
+                                    <div class="item-type">Лендинг</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio__data-colum">
+                            <div class="portfolio__data_item">
+                                <div class="portfolio__data_item-top"></div>
+                                <div class="portfolio__data_item-bottom">
+                                    <div class="item-title">Dream-scapes</div>
+                                    <div class="item-features">Лагуна Люфтганза</div>
+                                    <div class="item-type">Лендинг</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+            </div>
+        </section>
     </div>
     <footer class="footer">
         <div class="wrapper">
