@@ -4,8 +4,6 @@
     min-height: 233px;
     margin: 220px auto;
     position: relative;
-    /* Для проверки поставить дисплей блок*/
-    display: block;
 }
 .start__wrapper{
     -webkit-border-radius: 5px;
@@ -43,8 +41,8 @@ img.start__img {
     color: #ffffff;
     font: normal 14px/28px FiraSans-Bold;
     border: 2px solid #ffffff;
-    -webkit-border-radius:;
-    -moz-border-radius:;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
     border-radius: 20px;
 }
 

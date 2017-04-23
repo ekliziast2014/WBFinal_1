@@ -1,6 +1,9 @@
 var gulp = require("gulp"),
     connect = require("gulp-connect"),
-    opn = require("opn");
+    opn = require("opn"),
+    concat = require('gulp-concat'),
+    sourcemaps = require('gulp-sourcemaps'),
+    sass = require('gulp-sass');
 
 // Запуск локального сервера
 gulp.task('connect', function () {
@@ -19,7 +22,12 @@ gulp.task('html', function () {
 });
 // CSS
 gulp.task('css', function () {
-    gulp.src('app/css/**/*.css')
+    gulp.src('app/scss/**/*.scss')
+        .pipe(sourcemaps.init())
+        .pipe(concat('main.css'))
+        .pipe(sourcemaps.write())
+        .pipe(sass())
+        .pipe(gulp.dest('app/css'))
         .pipe(connect.reload());
 });
 // JS

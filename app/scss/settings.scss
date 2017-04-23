@@ -1,3 +1,5 @@
+//Общие стили
+
 *{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -31,9 +33,9 @@ h2 {
     padding: 90px 75px 10px;
     font: normal 21px/28px FiraSans-Medium;
 }
+//Конец Общих стилей
+/*Стили страниц - Для проверки ставить на все display:none; */
 
-/*Стили страниц*/
-/*Для проверки ставить на все display none*/
 .start {
     display: none;
 }
