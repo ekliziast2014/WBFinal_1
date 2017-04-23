@@ -1,0 +1,56 @@
+
+.nav__menu {
+    width: 225px;
+    list-style: none;
+    text-align: right;
+
+}
+
+.nav__menu__item {
+    height: 45px;
+    padding-right: 25px;
+    padding-top: 11px;
+}
+
+.nav__menu__item.active {
+    font-family: FiraSans-Bold;
+    border-right: 6px solid #33c1e3;
+}
+
+.nav__menu__item.active a {
+    font-family: FiraSans-Bold;
+}
+
+.nav__menu__item a {
+    display: block;
+    text-decoration: none;
+    font: normal 18px/24px FiraSans-Regular;
+    color: #414141;
+}
+
+.nav__menu__item a.me::before {
+    font-family: FontAwesome;
+    content: "\f21b";
+    margin-right: 10px;
+}
+
+.nav__menu__item a.path::before {
+    font-family: FontAwesome;
+    content: "\f135";
+    margin-right: 10px;
+}
+
+.nav__menu__item a.portf::before {
+    font-family: FontAwesome;
+    content: "\f0b1";
+    margin-right: 10px;
+}
+
+.nav__menu__item a:hover,
+.nav__menu__item.active a {
+    color: #33c1e3;
+}
+
+.nav__menu__item a:hover {
+    color: #33c1e3;
+}

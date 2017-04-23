@@ -1,0 +1,69 @@
+
+.about__ava {
+    max-width: 230px;
+    max-height: 230px;
+    background-color: #ffffff;
+    padding: 2px;
+    border-radius: 50%;
+    margin-left: 55px;
+}
+
+.about__description {
+    margin-left: 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.about__description_text {
+    max-width: 380px;
+    max-height: 320px;
+    overflow-y: scroll;
+    line-height: 1.42;
+    margin-bottom: 60px;
+}
+
+.about__description_text::-webkit-scrollbar {
+    width: 5px;
+}
+
+.about__description_text::-webkit-scrollbar-track {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.about__description_text::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background: #d8d8d8;
+}
+.about__description_link {
+    width: 173px;
+    height: 40px;
+    color: #e85f61;
+    padding: 5px 15px;
+    font: bold 14px/28px "Open Sans";
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #e85f61;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.about__description_link:hover {
+    background: #e85f61;
+    color: #ffffff;
+}
+
+.about__description_link:before {
+    font-family: FontAwesome, ;
+    color: #e85f61;
+    content: "\f019";
+    margin-right: 10px;
+}
+
+.about__description_link:hover:before {
+    color: #ffffff;
+}
