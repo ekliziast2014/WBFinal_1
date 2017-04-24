@@ -34,14 +34,15 @@ h2 {
     font: normal 21px/28px FiraSans-Medium;
 }
 //Конец Общих стилей
-/*Стили страниц - Для проверки ставить на все display:none; */
+
+/*Стили страниц - Для лендинга ставить на все display:none; */
 
 .start {
-    display: none;
+    display: block;
 }
 .main {
     min-height: 100%;
-    display:  none;
+    display:  block;
 }
 .main::after{
     content: '';
@@ -50,24 +51,25 @@ h2 {
 }
 
 .header {
-    display: none;
+    display: block;
 }
 
 .about {
-    display: none;
+    display: block;
 }
 
 .career {
-    display: none;
+    display: block;
 }
 
 .portfolio {
-    display: none;
+    display: block;
 }
 
 .footer {
-    display: none;
+    display: block;
 }
+//Конец стилей страниц
 
 .wrapper {
     height: 100%;

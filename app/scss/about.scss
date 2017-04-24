@@ -10,14 +10,11 @@
 
 .about__description {
     margin-left: 55px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
 }
 
 .about__description_text {
     max-width: 380px;
-    max-height: 320px;
+    height: 270px;
     overflow-y: scroll;
     line-height: 1.42;
     margin-bottom: 60px;
@@ -41,15 +38,15 @@
     width: 173px;
     height: 40px;
     color: #e85f61;
-    padding: 5px 15px;
+    padding: 5px 0px;
+    margin-bottom: 60px;
     font: bold 14px/28px "Open Sans";
-    text-align: right;
+    text-align: center;
     text-decoration: none;
     display: inline-block;
     border: 2px solid #e85f61;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
     border-radius: 20px;
+    float: right;
 }
 
 .about__description_link:hover {
