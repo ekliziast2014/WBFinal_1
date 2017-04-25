@@ -9,33 +9,33 @@
     <title>Piatnitskiy A</title>
 </head>
 <!-- Для проверки убрать класс!-->
-<body class="">
-    <main class="main">
+<body class="content">
+    <div class="wrapper">
         <header class="header">
-            <div class="wrapper">
-                <div class="header__person">
-                    <img src="img/content/Me.png" alt="" class="header__person__ava">
-                    <span class="header__person__name">Пятницкий Андрей</span>
+            <div class="container">
+                <div class="person">
+                    <img src="img/content/Me.png" alt="" class="person__ava">
+                    <span class="person__name">Пятницкий Андрей</span>
                 </div>
-                <div class="header__contacts">
-                    <span class="header__contacts_title">Мои контакты</span>
-                    <div class="header__contacts-detail">
-                        <ul class="contacts-detail__box">
-                            <li class="box__item post">ggsd</li>
-                            <li class="box__item phone">fsdf</li>
-                            <li class="box__item skype">fsfs</li>
-                        </ul>
-                    </div>
+                <!--Выпадашка спрятана и не стилизована-->
+                <div class="contacts">
+                    <span class="contacts__title">Мои контакты</span>
+                    <ul class="contacts__detail">
+                        <li class="contacts__detail_item post">ggsd</li>
+                        <li class="contacts__detail_item phone">fsdf</li>
+                        <li class="contacts__detail_item skype">fsfs</li>
+                    </ul>
                 </div>
+                <!--Конец выпадашки-->
             </div>
         </header>
         <section class="portfolio">
             <div class="wrapper">
-                <aside class="nav">
-                    <ul class="nav__menu">
-                        <li class="nav__menu__item"><a class="me" href="about.html">Обо мне</a></li>
-                        <li class="nav__menu__item"><a class="path" href="career.html">Карьерный путь</a></li>
-                        <li class="nav__menu__item active"><a class="portf" href="portfolio.html">Портфолио</a></li>
+                <aside class="navigation">
+                    <ul class="menu">
+                        <li class="menu__item active"><a class="me" href="about.html">Обо мне</a></li>
+                        <li class="menu__item"><a class="path" href="career.html">Карьерный путь</a></li>
+                        <li class="menu__item"><a class="portf" href="portfolio.html">Портфолио</a></li>
                     </ul>
                 </aside>
                 <div class="portfolio__description-box">
@@ -91,7 +91,7 @@
                 </div>
             </div>
         </section>
-    </main>
+    </div>
     <footer class="footer">
         <div class="wrapper">
             <span class="footer__text">&copy;Дизайн сайта был разработан в школе Loftschool</span>
@@ -102,6 +102,5 @@
             </div>
         </div>
     </footer>
-    <script src="js/main.js"></script>
 </body>
 </html>

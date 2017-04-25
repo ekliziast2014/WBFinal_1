@@ -6,17 +6,21 @@
   background: #414141;
   color: #929292;
 }
-.footer .wrapper{
+.footer .container{
   height: 100%;
-  align-items: center;
   font-size: 14px;
+}
+.footer__text{
+  float: left;
+  padding-top: 10px;
 }
 .footer__social{
   width: 105px;
-  display: flex;
-  justify-content:space-between;
+  float: right;
+  padding-top: 10px;
 }
 .footer__social a {
+  display: inline-block;
   width: 31px;
   height: 30px;
   background: url("../img/icons/social_bt.png");

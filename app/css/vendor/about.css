@@ -1,0 +1,57 @@
+.about-ava {
+  max-width: 230px;
+  max-height: 230px;
+  background-color: #ffffff;
+  padding: 2px;
+  border-radius: 50%;
+  margin-left: 55px;
+  display: inline-block;
+  float: left; }
+
+.about-description {
+  max-width: 380px;
+  display: inline-block;
+  float: right; }
+
+.about-description__text {
+  max-width: 380px;
+  height: 330px;
+  font: 300 18px/26px "FiraSans-Light";
+  overflow-y: scroll;
+  line-height: 1.42;
+  margin-bottom: 60px;
+  padding-right: 25px; }
+
+.about-description__text::-webkit-scrollbar {
+  width: 5px; }
+
+.about-description__text::-webkit-scrollbar-track {
+  border-radius: 5px; }
+
+.about-description__text::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #d8d8d8; }
+
+.about-description__link {
+  width: 173px;
+  height: 40px;
+  color: #e85f61;
+  padding: 5px 0px;
+  margin-bottom: 60px;
+  font: bold 15px/28px "FiraSans-Bold";
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid #e85f61;
+  border-radius: 20px;
+  float: right; }
+  .about-description__link:hover {
+    background: #e85f61;
+    color: #ffffff; }
+  .about-description__link:before {
+    font: bold 15px/28px FontAwesome;
+    color: #e85f61;
+    content: "\f019";
+    margin-right: 10px; }
+  .about-description__link:hover:before {
+    color: #ffffff; }

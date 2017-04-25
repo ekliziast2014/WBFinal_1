@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* Общие стили */
+* {
+  box-sizing: border-box; }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font: normal 18px/28px FiraSans-Light;
+  color: #414141;
+  background: url("../img/bg/background.png");
+  overflow: hidden; }
+
+body.content {
+  background: #f6f6f6;
+  overflow: auto; }
+
+h1 {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 45px;
+  margin: 0; }
+
+/* Конец Общих стилей */
+/*Стили страниц - Для лендинга ставить на все display:none; */
+.start {
+  display: block; }
+
+.wrapper {
+  min-height: 100%;
+  display: block; }
+  .wrapper:after {
+    content: '';
+    height: 50px;
+    display: block; }
+
+.header {
+  display: block; }
+
+.about {
+  display: block; }
+
+.career {
+  display: block; }
+
+.portfolio {
+  display: block; }
+
+.footer {
+  display: block; }
+
+/* Конец стилей страниц */
+.container {
+  height: 100%;
+  width: 940px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+/*Стили изменяемые JQ*/
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+/*Конец стилей JQ*/

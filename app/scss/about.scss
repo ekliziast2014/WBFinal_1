@@ -1,66 +1,67 @@
-
-.about__ava {
+.about-ava {
     max-width: 230px;
     max-height: 230px;
     background-color: #ffffff;
     padding: 2px;
     border-radius: 50%;
     margin-left: 55px;
+    display: inline-block;
+    float: left;
 }
 
-.about__description {
-    margin-left: 55px;
-}
-
-.about__description_text {
+.about-description {
     max-width: 380px;
-    height: 270px;
+    display: inline-block;
+    float: right;
+}
+
+.about-description__text {
+    max-width: 380px;
+    height: 330px;
+    font: 300 18px/26px "FiraSans-Light";
     overflow-y: scroll;
     line-height: 1.42;
     margin-bottom: 60px;
+    padding-right: 25px;
 }
 
-.about__description_text::-webkit-scrollbar {
+.about-description__text::-webkit-scrollbar {
     width: 5px;
 }
 
-.about__description_text::-webkit-scrollbar-track {
-    -webkit-border-radius: 5px;
+.about-description__text::-webkit-scrollbar-track {
     border-radius: 5px;
 }
 
-.about__description_text::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 5px;
+.about-description__text::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background: #d8d8d8;
 }
-.about__description_link {
+.about-description__link {
     width: 173px;
     height: 40px;
     color: #e85f61;
     padding: 5px 0px;
     margin-bottom: 60px;
-    font: bold 14px/28px "Open Sans";
+    font: bold 15px/28px "FiraSans-Bold" ;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     border: 2px solid #e85f61;
     border-radius: 20px;
     float: right;
+    &:hover {
+        background: #e85f61;
+        color: #ffffff;
+    }
+    &:before {
+        font: bold 15px/28px FontAwesome;
+        color: #e85f61;
+        content: "\f019";
+        margin-right: 10px;
+    }
+    &:hover:before{
+        color: #ffffff;
+    }
 }
 
-.about__description_link:hover {
-    background: #e85f61;
-    color: #ffffff;
-}
-
-.about__description_link:before {
-    font-family: FontAwesome, ;
-    color: #e85f61;
-    content: "\f019";
-    margin-right: 10px;
-}
-
-.about__description_link:hover:before {
-    color: #ffffff;
-}

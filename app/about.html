@@ -9,53 +9,55 @@
     <title>Piatnitskiy A</title>
 </head>
 <body class="content">
-    <main class="main">
+    <div class="wrapper">
         <header class="header">
-            <div class="wrapper">
-                <div class="header__person">
-                    <img src="img/content/Me.png" alt="" class="header__person__ava">
-                    <span class="header__person__name">Пятницкий Андрей</span>
+            <div class="container">
+                <div class="person">
+                    <img src="img/content/Me.png" alt="" class="person__ava">
+                    <span class="person__name">Пятницкий Андрей</span>
                 </div>
-                <div class="header__contacts">
-                    <span class="header__contacts_title">Мои контакты</span>
-                    <div class="header__contacts-detail">
-                        <ul class="contacts-detail__box">
-                            <li class="box__item post">ggsd</li>
-                            <li class="box__item phone">fsdf</li>
-                            <li class="box__item skype">fsfs</li>
+                <!--Выпадашка спрятана и не стилизована-->
+                <div class="contacts">
+                    <span class="contacts__title">Мои контакты</span>
+                        <ul class="contacts__detail">
+                            <li class="contacts__detail_item post">ggsd</li>
+                            <li class="contacts__detail_item phone">fsdf</li>
+                            <li class="contacts__detail_item skype">fsfs</li>
                         </ul>
-                    </div>
                 </div>
+                <!--Конец выпадашки-->
             </div>
         </header>
         <section class="about">
-            <div class="wrapper">
-                <aside class="nav">
-                    <ul class="nav__menu">
-                        <li class="nav__menu__item active"><a class="me" href="about.html">Обо мне</a></li>
-                        <li class="nav__menu__item"><a class="path" href="career.html">Карьерный путь</a></li>
-                        <li class="nav__menu__item"><a class="portf" href="portfolio.html">Портфолио</a></li>
+            <div class="container">
+                <aside class="navigation">
+                    <ul class="menu">
+                        <li class="menu__item active"><a class="me" href="about.html">Обо мне</a></li>
+                        <li class="menu__item"><a class="path" href="career.html">Карьерный путь</a></li>
+                        <li class="menu__item"><a class="portf" href="portfolio.html">Портфолио</a></li>
                     </ul>
                 </aside>
-                <img class="about__ava" src="img/content/Me_big.png" alt="">
-                <div class="about__description">
+                <img class="about-ava" src="img/content/Me_big.png" alt="">
+                <div class="about-description">
                     <h1>Обо мне</h1>
-                    <div class="about__description_text">
-                        <p>Доброго всем времени суток!<br>
-                            Мне 31 , проживаю в городе Бердичев(Украина).
-                            Имею 10-ти летний опыт работы в банковской системе...</p>
-                        <p>Хватит !<br>
-                            Нацелен на изменение сферы деятельности
-                        <h3>Пора быть там, где развитие!</h3>
+                    <div class="about-description__text">
+                        <p>Меня зовут Костя. Проживаю на Юге Башкортостана, с появлением интернета, с головой увлёкся
+                            этой темой, и теперь уже почти живу Он-Лайн.</p>
+                        <p>С недавних пор (уже года два), это уже мне просто увлечение, но и нормальный заработок для
+                            меня и моей семьи, на этом конечно не собираюсь останавливаться, а буду стараться добиться
+                            ещё больших результатов!</p>
+                        <p>Интернет сообщество очень интересно и многогранно , почти каждый день появляется что то
+                            новое и хочется всё это изучить, внедрить и проверить на себе , многое получается, и со
+                            временем приносит свои плоды.</p>
                     </div>
                     <!-- Для возможности скачивания добавить download для а -->
-                    <a href="#" class="about__description_link">Скачать резюме</a>
+                    <a href="#" class="about-description__link">Скачать резюме</a>
                 </div>
             </div>
         </section>
-    </main>
+    </div>
     <footer class="footer">
-        <div class="wrapper">
+        <div class="container">
             <span class="footer__text">&copy;Дизайн сайта был разработан в школе Loftschool</span>
             <div class="footer__social">
                 <a class="footer__social__fb" href="#"></a>

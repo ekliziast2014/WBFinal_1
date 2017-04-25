@@ -1,0 +1,43 @@
+.footer {
+  width: 100%;
+  height: 50px;
+  margin-top: -50px;
+  background: #414141;
+  color: #929292; }
+
+.footer .container {
+  height: 100%;
+  font-size: 14px; }
+
+.footer__text {
+  float: left;
+  padding-top: 10px; }
+
+.footer__social {
+  width: 105px;
+  float: right;
+  padding-top: 10px; }
+
+.footer__social a {
+  display: inline-block;
+  width: 31px;
+  height: 30px;
+  background: url("../img/icons/social_bt.png"); }
+
+a.footer__social__fb {
+  background-position: left bottom; }
+
+a.footer__social__fb:hover {
+  background-position-y: top; }
+
+a.footer__social__vk {
+  background-position: -38px bottom; }
+
+a.footer__social__vk:hover {
+  background-position-y: top; }
+
+a.footer__social__tw {
+  background-position: -76px bottom; }
+
+a.footer__social__tw:hover {
+  background-position-y: top; }
