@@ -2,8 +2,8 @@ var gulp = require("gulp"),
     connect = require("gulp-connect"),
     opn = require("opn"),
     concat = require('gulp-concat'),
-    sourcemaps = require('gulp-sourcemaps'),
-    sass = require('gulp-sass');
+    sass = require('gulp-sass'),
+    sourcemaps = require('gulp-sourcemaps');
 
 // Запуск локального сервера
 gulp.task('connect', function () {
@@ -15,22 +15,34 @@ gulp.task('connect', function () {
     opn('http://localhost:555');
 });
 
+// Компиляция SCSS в CSS
+gulp.task('sass', function () {
+    gulp.src('app/scss/**/*.scss')
+        .pipe(sass())
+        .pipe(gulp.dest('app/css/vendor'));
+});
+gulp.task('concat', function () {
+    gulp.src('app/css/vendor/*.css')
+        .pipe(sourcemaps.init())
+        .pipe(concat('main.css'))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('app/css'));
+});
+
 // Работа с HTML
 gulp.task('html', function () {
     gulp.src('app/*.html')
         .pipe(connect.reload());
 });
-// CSS
+
+
+// Работа с CSS
 gulp.task('css', function () {
-    gulp.src('app/scss/**/*.scss')
-        .pipe(sourcemaps.init())
-        .pipe(concat('main.css'))
-        .pipe(sourcemaps.write())
-        .pipe(sass())
-        .pipe(gulp.dest('app/css'))
+    gulp.src('app/css/**/*.css')
         .pipe(connect.reload());
 });
-// JS
+
+// Работа с JS
 gulp.task('js', function () {
     gulp.src('app/js/**/*.js')
         .pipe(connect.reload());
@@ -40,8 +52,10 @@ gulp.task('js', function () {
 gulp.task('watch', function () {
     gulp.watch(['app/*.html'], ['html']);
     gulp.watch(['app/css/**/*.css'], ['css']);
+    gulp.watch(['app/scss/**/*.scss'], ['sass']);
     gulp.watch(['app/js/**/*.js'], ['js']);
 });
 
 // Задача по-умолчанию
-gulp.task('default', ['connect', 'watch']);
+gulp.task('default', ['sass','concat','connect', 'watch']);
+// Полная проверка добавить такие таски -  ,'connect', 'watch'
