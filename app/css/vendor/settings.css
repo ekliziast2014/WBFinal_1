@@ -13,10 +13,10 @@ body {
   color: #414141;
   background: url("../img/bg/background.png");
   overflow: hidden; }
-
-body.content {
-  background: #f6f6f6;
-  overflow: auto; }
+  html .content,
+  body .content {
+    background: #f6f6f6;
+    overflow: auto; }
 
 h1 {
   font-size: 35px;

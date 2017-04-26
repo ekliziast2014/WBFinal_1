@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 html,
-body{
+body {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -13,11 +13,12 @@ body{
     color: #414141;
     background: url("../img/bg/background.png");
     overflow: hidden;
+    .content {
+        background: #f6f6f6;
+        overflow: auto;
+    }
 }
-body.content{
-    background: #f6f6f6;
-    overflow: auto;
-}
+
 h1{
     font-size: 35px;
     font-weight: 600;

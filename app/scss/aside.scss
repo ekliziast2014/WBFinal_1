@@ -1,5 +1,10 @@
 .navigation{
     float: left;
+    &:after{
+        content: '';
+        clear: both;
+        display: block;
+    }
 }
 
 .menu {

@@ -1,5 +1,9 @@
 .navigation {
   float: left; }
+  .navigation:after {
+    content: '';
+    clear: both;
+    display: block; }
 
 .menu {
   width: 230px;

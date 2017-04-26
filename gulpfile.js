@@ -21,6 +21,8 @@ gulp.task('sass', function () {
         .pipe(sass())
         .pipe(gulp.dest('app/css/vendor'));
 });
+
+// Конкатенация CSS в один файл main.css
 gulp.task('concat', function () {
     gulp.src('app/css/vendor/*.css')
         .pipe(sourcemaps.init())
