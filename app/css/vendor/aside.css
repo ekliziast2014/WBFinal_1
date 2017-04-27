@@ -1,12 +1,8 @@
 .navigation {
   float: left; }
-  .navigation:after {
-    content: '';
-    clear: both;
-    display: block; }
 
 .menu {
-  width: 230px;
+  width: 220px;
   list-style: none;
   text-align: right; }
 

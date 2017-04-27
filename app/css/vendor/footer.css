@@ -18,26 +18,26 @@
   float: right;
   padding-top: 10px; }
 
-.footer-social a {
+.footer-social__link {
   display: inline-block;
-  width: 31px;
+  width: 32px;
   height: 30px;
   background: url("../img/icons/social_bt.png") no-repeat; }
 
-a.footer-social__fb {
+.footer-social__link_fb {
   background-position: left bottom; }
 
-a.footer-social__fb:hover {
+.footer-social__link_fb:hover {
   background-position-y: top; }
 
-a.footer-social__vk {
+.footer-social__link_vk {
   background-position: -38px bottom; }
 
-a.footer-social__vk:hover {
+.footer-social__link_vk:hover {
   background-position-y: top; }
 
-a.footer-social__tw {
-  background-position: -76px bottom; }
+.footer-social__link_tw {
+  background-position: -75px bottom; }
 
-a.footer-social__tw:hover {
+.footer-social__link_tw:hover {
   background-position-y: top; }

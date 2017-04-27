@@ -1,12 +1,12 @@
-
 .career-description,
 .portfolio-description{
     display: inline-block;
-    min-width: 700px;
+    width: 720px;
     padding-left: 20px;
+    float: right;
 }
-.career-description_title,
-.portfolio-description_title{
+.career-description__title,
+.portfolio-description__title{
     margin: 0;
     padding: 0;
     font: normal 35px/40px FiraSans-Medium;
@@ -20,29 +20,19 @@
     background: url("../img/content/Career_img.png") -90px -10px;
     border-radius: 5px;
     float: left;
-    &:after{
-        content: '';
-        clear: both;
-        display: block;
-    }
 }
 .career-description__data{
     width: 380px;
     list-style: none;
     float: right;
-    &:after{
-        content: '';
-        clear: both;
-        display: block;
-    }
 }
 
-.career-description__data__item{
+.career-description__data_item{
     margin-bottom: 20px;
     position: relative;
     min-height: 110px;
     background: #ffffff;
-    padding: 10px 20px;
+    padding: 15px 20px;
     line-height: 1.42;
     border-radius: 10px;
     cursor: pointer;
@@ -50,10 +40,10 @@
     &:hover {
         color: #ffffff;
         background: #33c1e3;
-        .career-description__data__item-indicator-circle-big{
+        .career-description__data_item-indicator-circle-big{
             display: block;
         }
-        .career-description__data__item-indicator{
+        .career-description__data_item-indicator{
             font: bold 18px/28px FiraSans-Bold;
             color: #33c1e3;
             left: -72px;
