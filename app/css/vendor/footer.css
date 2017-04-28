@@ -3,7 +3,8 @@
   height: 50px;
   margin-top: -50px;
   background: #414141;
-  color: #929292; }
+  color: #929292;
+  overflow: hidden; }
 
 .footer .container {
   height: 100%;

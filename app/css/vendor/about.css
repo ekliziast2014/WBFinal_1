@@ -1,6 +1,5 @@
 .about-ava {
-  max-width: 230px;
-  max-height: 230px;
+  max-width: 24%;
   background-color: #ffffff;
   padding: 2px;
   border-radius: 50%;
@@ -9,18 +8,23 @@
   float: left; }
 
 .about-description {
-  max-width: 380px;
+  width: 40.4%;
   display: inline-block;
   float: right; }
 
+.about-description_title {
+  margin: -3px 0 20px 0; }
+
 .about-description__text {
-  max-width: 380px;
   height: 330px;
   font: 300 18px/26px "FiraSans-Light";
   overflow-y: scroll;
   line-height: 1.42;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   padding-right: 25px; }
+
+.about-description__text_item {
+  margin: -5px 0 15px 0; }
 
 .about-description__text::-webkit-scrollbar {
   width: 5px; }
@@ -37,7 +41,7 @@
   height: 40px;
   color: #e85f61;
   padding: 5px 0px;
-  margin-bottom: 70px;
+  margin-bottom: 74px;
   font: bold 15px/28px "FiraSans-Bold";
   text-align: center;
   text-decoration: none;

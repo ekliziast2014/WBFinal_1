@@ -1,18 +1,19 @@
 .navigation {
-  float: left; }
+  float: left;
+  width: 23.4%; }
 
 .menu {
-  width: 220px;
   list-style: none;
   text-align: right; }
 
 .menu__item {
-  height: 45px;
+  min-height: 45px;
   padding-right: 30px;
   padding-top: 9px; }
 
 .menu__item.active {
-  border-right: 6px solid #33c1e3; }
+  border-right: 6px solid #33c1e3;
+  padding-right: 24px; }
 
 .menu__item.active a {
   font: bold 18px/24px FiraSans-Bold; }

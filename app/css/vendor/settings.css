@@ -31,12 +31,31 @@ h1 {
 
 .wrapper {
   min-height: 100%;
-  display: block; }
+  display: block;
+  overflow: hidden; }
   .wrapper:after {
     content: '';
     height: 50px;
     display: block; }
 
+.container {
+  height: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+/*Стили изменяемые JQ*/
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
+
+/*Конец стилей JQ*/
 .header {
   display: block; }
 
@@ -53,21 +72,3 @@ h1 {
   display: block; }
 
 /* Конец стилей страниц */
-.container {
-  height: 100%;
-  width: 940px;
-  margin: 0 auto;
-  overflow: hidden; }
-
-ul {
-  margin: 0;
-  padding: 0; }
-
-/*Стили изменяемые JQ*/
-.hide {
-  display: none; }
-
-.show {
-  display: block; }
-
-/*Конец стилей JQ*/
