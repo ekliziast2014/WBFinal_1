@@ -1,32 +1,40 @@
 /* Ноутбук:
 	Ширина экрана - 992px
     Ширина контейнера - 750px */
-@media screen and (max-width: 992px){
-    .container{
+@media screen and (max-width: 992px) {
+    .container {
         width: 750px;
     }
-    .about-ava{
+
+    .about-ava {
         margin-left: 30px;
     }
-    .about-description__text{
+
+    .about-description__text {
         padding-right: 10px;
     }
+
     .career-description__title,
-    .portfolio-description__title{
+    .portfolio-description__title {
         margin-bottom: 20px;
     }
+
     .career-description__data_item-position,
-    .career-description__data_item-when{
+    .career-description__data_item-when {
         font: normal 16px/26px FiraSans-Light;
     }
-    .career-description__data_item-where{
+
+    .career-description__data_item-where {
         font: normal 19px/26px FiraSans-Regular;
-    }}
+    }
+
     .portfolio__data_item {
         width: 178px;
         min-height: 229px;
         margin-left: 10px;
     }
-    .portfolio__data_item-top{
+
+    .portfolio__data_item-top {
         background: url("../img/content/Portf_item1.png") -30px 0 no-repeat;
+    }
 }
