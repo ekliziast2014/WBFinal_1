@@ -33,19 +33,20 @@
   float: right; }
 
 .contacts__title {
-  color: #33c1e3;
   text-decoration: none;
   font: 600 18px/28px FiraSans-Bold;
+  color: #33c1e3;
+  border-bottom: 2px dotted #33c1e3;
   cursor: pointer; }
   .contacts__title:hover {
-    color: #e85f61; }
-    .contacts__title:hover:after {
-      color: #e85f61;
-      border-bottom: 2px dotted #e85f61; }
-  .contacts__title:after {
-    content: '';
-    display: block;
-    border-bottom: 2px dotted #33c1e3; }
+    color: #e85f61;
+    border-bottom: 2px dotted #e85f61; }
+
+.contacts__title-icon {
+  content: "\f095";
+  color: #32c3e5;
+  font: normal 38px/34px FontAwesome;
+  display: none; }
 
 .contacts__detail {
   width: 193px;
