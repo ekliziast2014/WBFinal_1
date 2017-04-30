@@ -29,7 +29,7 @@
 
 .contacts {
   height: 100%;
-  padding-top: 28px;
+  line-height: 80px;
   float: right; }
 
 .contacts__title {
@@ -42,12 +42,14 @@
     color: #e85f61;
     border-bottom: 2px dotted #e85f61; }
 
+/*Не реализована "трубка" */
 .contacts__title-icon {
   content: "\f095";
   color: #32c3e5;
   font: normal 38px/34px FontAwesome;
   display: none; }
 
+/* Конец трубки */
 .contacts__detail {
   width: 193px;
   display: none;
