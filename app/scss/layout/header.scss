@@ -30,9 +30,13 @@
 }
 
 .contacts {
-    height: 100%;
+    height: 90%;
     line-height: 80px;
     float: right;
+    position: relative;
+    &:hover .contacts__detail{
+        display: block;
+    }
 }
 
 .contacts__title {
@@ -49,23 +53,77 @@
 
 .contacts__title-icon:before{
     content: "\f095";
-    color: #32c3e5;
+    color: $blue;
     font: normal 38px/38px FontAwesome;
     display: none;
 }
-/* -------Не реализована выпадашка------- */
+/* -------выпадашка------- */
 
 .contacts__detail{
-    width: 193px;
-    display: none;
+    width: 230px;
     position: absolute;
     top: 70px;
-    right: 130px;
+    left: -55px;
+    color: $blue;
+    background: #ffffff;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    z-index:5;
     display: none;
+        &:before {
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: -12px;
+            left: 109px;
+            border-bottom: 12px solid #dedede;
+            border-right: 12px solid transparent;
+            border-left: 12px solid transparent;
+        }
+        &:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: -11px;
+            left: 109px;
+            border-bottom: 12px solid #ffffff;
+            border-right: 12px solid transparent;
+            border-left: 12px solid transparent;
+        }
+
 }
 .contacts__detail_item{
     width: 100%;
     height: 44px;
-    list-style:none;
+    text-align: left;
+    line-height: 44px;
+    list-style: none;
+    padding: 10px;
+    a {
+        display: block;
+        text-decoration: none;
+        font: normal 18px/24px FiraSans-Regular;
+        color: $blue;
+        &.post:before {
+            content: "\f0e0";
+            font: normal 18px/24px FontAwesome;
+            margin-right: 10px;
+        }
+
+        &.phone:before {
+            content: "\f095";
+            font: normal 18px/24px FontAwesome;
+            margin-right: 10px;
+        }
+        &.skype:before {
+            content: "\f17e";
+            font: normal 18px/24px FontAwesome;
+            margin-right: 10px;
+        }
+    }
 }
 /* -------Конец выпадашки-------*/

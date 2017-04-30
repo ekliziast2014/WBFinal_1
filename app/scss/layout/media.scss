@@ -52,8 +52,19 @@
     .contacts__title{
         display: none;
     }
-    .contacts__title-icon:before{
-        display: inline-block;
+    .contacts__title-icon {
+        &:before {
+            display: inline-block;
+        }
+    }
+    .contacts__detail{
+        left: -140px;
+        &:before {
+            left: 150px;
+        }
+        &:after {
+            left: 150px;
+        }
     }
     .navigation {
         width: 100%;
@@ -215,6 +226,10 @@
     }
     .portfolio__data_item{
         float: none;
+    }
+    .footer-text{
+        display: none;
+        line-height: $footer-height;
     }
 }
 
