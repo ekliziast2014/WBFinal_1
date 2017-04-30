@@ -1,8 +1,7 @@
 .portfolio__data_item{
     width: 220px;
-    min-height: 281px;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    height: 281px;
+    margin: 0 0 20px 20px;
     border-radius: 10px;
     display: inline-block;
     float: left;
@@ -20,16 +19,16 @@
 }
 .portfolio__data_item-bottom{
     min-height: 109px;
-    padding:20px 0px 35px 20px;
+    padding:20px 0 35px 20px;
     background: #ffffff;
     position: relative;
 }
 .portfolio__data_item-bottom .item-title{
     font: normal 21px/24px FiraSans-Regular;
-    color: #33c1e3;
+    color: $blue;
 }
 .portfolio__data_item-bottom:hover .item-title{
-    color: #e85f61;
+    color: $red;
 }
 .portfolio__data_item-bottom .item-features{
     font: normal 14px/21px FiraSans-Light;
@@ -41,8 +40,7 @@
     bottom: 10px;
 }
 .portfolio__data_item-bottom .item-type:before{
-    font-family: FontAwesome;
-    font-size: 18px;
+    font: normal 18px/24px FontAwesome;
     content: "\f10b";
     margin-right: 10px;
 }

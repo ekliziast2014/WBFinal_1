@@ -29,7 +29,7 @@
 .career-description__data_item{
     margin-bottom: 20px;
     position: relative;
-    min-height: 110px;
+    max-height: 110px;
     background: #ffffff;
     padding: 15px 20px;
     border-radius: 10px;
@@ -37,13 +37,13 @@
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     &:hover {
         color: #ffffff;
-        background: #33c1e3;
+        background: $blue;
         .career-description__data_item-indicator-circle-big{
             display: block;
         }
         .career-description__data_item-indicator{
             font: bold 18px/28px FiraSans-Bold;
-            color: #33c1e3;
+            color: $blue;
             left: -72px;
             top:33.5%;
         }
@@ -69,7 +69,7 @@
             top:40%;
             left: -25px;
             border-radius: 5px;
-            background: #33c1e3;
+            background: $blue;
             z-index:2;
         }
         &-circle-big{

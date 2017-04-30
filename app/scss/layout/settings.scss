@@ -25,27 +25,20 @@ h1{
     margin: 0;
 }
 
-/* Конец Общих стилей */
-
-/*Стили страниц - Для лендинга ставить на все display:none; */
-
-.start {
-    display: block;
-}
 .wrapper {
     min-height: 100%;
     display: block;
     overflow: hidden;
     &:after {
         content: '';
-        height: 50px;
+        height: $footer-height;
         display: block;
     }
 }
 
 .container {
     height: 100%;
-    max-width: 940px;
+    width: 940px;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -54,7 +47,7 @@ ul {
     padding: 0;
 }
 
-/*Стили изменяемые JQ*/
+/*-------Стили изменяемые JQ-------
 
 .hide{
     display: none;
@@ -62,26 +55,6 @@ ul {
 .show{
     display: block;
 }
-/*Конец стилей JQ*/
+-------Конец стилей JQ-------*/
 
 
-.header {
-    display: block;
-}
-
-.about {
-    display: block;
-}
-
-.career {
-    display: block;
-}
-
-.portfolio {
-    display: block;
-}
-
-.footer {
-    display: block;
-}
-/* Конец стилей страниц */

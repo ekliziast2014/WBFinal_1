@@ -42,23 +42,23 @@
 .about-description__link {
     width: 173px;
     height: 40px;
-    color: #e85f61;
-    padding: 5px 0px;
+    color: $red;
+    padding: 5px 0;
     margin-bottom: 74px;
     font: bold 15px/28px "FiraSans-Bold" ;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    border: 2px solid #e85f61;
+    border: 2px solid $red;
     border-radius: 20px;
     float: right;
     &:hover {
-        background: #e85f61;
+        background: $red;
         color: #ffffff;
     }
     &:before {
         font: bold 15px/28px FontAwesome;
-        color: #e85f61;
+        color: $red;
         content: "\f019";
         margin-right: 10px;
     }

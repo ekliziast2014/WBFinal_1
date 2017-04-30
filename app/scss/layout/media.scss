@@ -52,8 +52,8 @@
     .contacts__title{
         display: none;
     }
-    .contacts__title-icon{
-        display: block;
+    .contacts__title-icon:before{
+        display: inline-block;
     }
     .navigation {
         width: 100%;
@@ -73,7 +73,6 @@
     .menu__item {
         padding: 0;
         display: inline-block;
-        min-height: 0;
         font:bold 18px/18px FiraSans-Bold;
     }
 
@@ -114,7 +113,6 @@
     }
     .career-description__data_item{
         padding: 10px;
-        min-height:auto;
     }
     .career-description__data_item-position,
     .career-description__data_item-when {
@@ -203,7 +201,6 @@
     }
     .career-description__data_item{
         padding: 10px;
-        min-height:auto;
     }
     .career-description__data_item-position,
     .career-description__data_item-when {

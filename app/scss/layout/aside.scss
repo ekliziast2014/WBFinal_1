@@ -14,7 +14,7 @@
     padding-right: 30px;
     padding-top: 9px;
     &.active{
-        border-right: 6px solid #33c1e3;
+        border-right: 6px solid $blue;
         padding-right: 24px;
     }
 }
@@ -50,7 +50,7 @@
 
 .menu__item a:hover,
 .menu__item.active a {
-    color: #33c1e3;
+    color: $blue;
 }
 
 
