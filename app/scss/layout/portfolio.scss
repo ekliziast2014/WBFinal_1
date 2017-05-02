@@ -7,9 +7,15 @@
     float: left;
     overflow: hidden;
     cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     &:nth-child(1),
     &:nth-child(4){
             margin-left: 0;
+    }
+    &:hover{
+        .item-title{
+            color: $red;
+        }
     }
 }
 .portfolio__data_item-top{
@@ -26,9 +32,6 @@
 .portfolio__data_item-bottom .item-title{
     font: normal 21px/24px FiraSans-Regular;
     color: $blue;
-}
-.portfolio__data_item-bottom:hover .item-title{
-    color: $red;
 }
 .portfolio__data_item-bottom .item-features{
     font: normal 14px/21px FiraSans-Light;

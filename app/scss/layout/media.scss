@@ -5,43 +5,66 @@
     .container {
         width: 750px;
     }
+    .navigation {
+        width: 100%;
+    }
 
+    .menu {
+        text-align: left;
+        font-size: 0;
+    }
+
+    .menu:after {
+        content: '';
+        height: 0;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .menu__item {
+        min-height: 0;
+        padding: 0;
+        margin-right: 30px;
+        display: inline-block;
+    }
+
+    .menu__item.active {
+        border-right: none;
+        padding-right: 0;
+    }
     .about-ava {
+        width: 175px;
         margin-left: 30px;
     }
 
-    .about-description{
-        width: 44%;
+    .about-description {
+        width: 58.67%;
     }
-    .about-description__title{
+
+    .about-description__title {
         margin-bottom: 10px;
     }
     .about-description__text {
         padding-right: 10px;
+        margin-right: 40px;
     }
+    .career-description,
     .portfolio-description{
+        width: 100%;
         padding-left: 0;
     }
     .career-description__title,
     .portfolio-description__title {
         margin-bottom: 20px;
     }
-    .portfolio-description__title {
-        margin-left:20px;
+    .career-description__img {
+        width: 230px;
     }
-    .career-description__data_item-position,
-    .career-description__data_item-when {
-        font: normal 16px/26px FiraSans-Light;
+    .career-description__data {
+        width: 45%;
     }
-
-    .career-description__data_item-where {
-        font: normal 19px/26px FiraSans-Regular;
-    }
-
-    .portfolio__data_item:first-child,
-    .portfolio__data_item:nth-child(4){
-        margin-left: 20px; }
 }
+
 /* Планшет
     Ширина экрана - 768px
     Ширина контейнера - 480px */
@@ -58,54 +81,33 @@
         }
     }
     .contacts__detail{
-        left: -140px;
+        left: -190px;
         &:before {
-            left: 150px;
+            left: 185px;
         }
         &:after {
-            left: 150px;
+            left: 185px;
         }
     }
-    .navigation {
-        width: 100%;
-    }
-
-    .menu {
-        text-align: justify;
-    }
-
-    .menu:after {
-        content: '';
-        height: 0;
-        width: 100%;
-        display: inline-block;
-    }
-
-    .menu__item {
-        padding: 0;
-        display: inline-block;
-        font:bold 18px/18px FiraSans-Bold;
-    }
-
-    .menu__item.active {
-        border-right: none;
-        padding-right: 0;
+    .menu__item:nth-child(3) {
+        margin-right: 0;
     }
 
     .about-ava {
         margin-left: 28%;
         margin-bottom: 20px;
-        max-width: 40%;
-    }
-
-    .about-description__title {
-        text-align: center;
-        margin-bottom: 10px;
     }
 
     .about-description {
         display: block;
         width: 100%;
+    }
+    .about-description__title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .about-description__text {
+        margin-right: 0;
     }
 
     .career-description,
@@ -113,28 +115,39 @@
         width: 100%;
         padding-left: 0;
     }
-    .career-description__data{
-        width: 50%;
-    }
     .career-description__title,
     .portfolio-description__title{
         text-align: center;
-        font: normal 30px/30px FiraSans-Medium;
         margin-bottom: 30px;
     }
+    .career-description__img{
+        margin-left: 28%;
+        margin-bottom: 10px;
+    }
+    .career-description__data{
+        width: 100%;
+    }
     .career-description__data_item{
-        padding: 10px;
-    }
-    .career-description__data_item-position,
-    .career-description__data_item-when {
-        font: normal 14px/24px FiraSans-Light;
-    }
-
-    .career-description__data_item-where {
-        font: normal 16px/24px FiraSans-Regular;
+        width:440px;
+        &-indicator{
+            display: none;
+            &-circle,
+            &-circle-big{
+                display: none;
+            }
+        }
+        &-indicator-line{
+            display: none;
+        }
     }
     .portfolio__data_item {
-        margin-left: 20px; }
+        &:nth-child(4) {
+            margin-left: 20px;
+        }
+        &:nth-child(3),
+        &:nth-child(5){
+            margin-left: 0;
+        }}
 }
 /*Телефон
     Ширина экрана - 480px и меньше
@@ -144,61 +157,18 @@
     .container {
         width: 95%;
     }
-    .contacts__title{
-        display: none;
-    }
-    .contacts__title-icon{
-        display: block;
-    }
-    .navigation {
-        width: 100%;
-    }
-
-    .menu {
-        text-align: justify;
-    }
-
-    .menu:after {
-        content: '';
-        height: 0;
-        width: 100%;
-        display: inline-block;
-    }
-
     .menu__item {
-        padding: 0;
-        display: inline-block;
-        min-height: 0;
-        font:bold 16px/16px FiraSans-Bold;
+        margin-right: 17px;
     }
-
-    .menu__item.active {
-        border-right: none;
-        padding-right: 0;
+    .menu__item a{
+        font-size: 14px;
     }
-
-    .about-ava {
-        margin-left: 28%;
-        margin-bottom: 20px;
-        max-width: 40%;
-    }
-
-    .about-description__title {
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    .about-description {
-        display: block;
-        width: 100%;
-    }
-
-    .career-description__img{
+    .menu__item a.me:before,
+    .menu__item a.path:before,
+    .menu__item a.portf:before{
         display: none;
     }
-    .career-description__data{
-        width: 65%;
-    }
+
     .career-description,
     .portfolio-description {
         width: 100%;
@@ -207,25 +177,18 @@
     .career-description__title,
     .portfolio-description__title{
         text-align: center;
-        font: normal 25px/25px FiraSans-Medium;
         margin-bottom: 30px;
     }
-    .career-description__data_item{
-        padding: 10px;
-    }
-    .career-description__data_item-position,
-    .career-description__data_item-when {
-        font: normal 14px/24px FiraSans-Light;
+    .career-description__data_item {
+        width: 100%;
     }
 
-    .career-description__data_item-where {
-        font: normal 16px/24px FiraSans-Regular;
-    }
-    .portfolio__data{
-        text-align: center;
-    }
     .portfolio__data_item{
         float: none;
+        margin-left: 0;
+        &:nth-child(4){
+            margin-left: 0;
+        }
     }
     .footer-text{
         display: none;
