@@ -1,4 +1,3 @@
-
 .footer{
   width: 100%;
   height: $footer-height;
@@ -9,8 +8,16 @@
   overflow: hidden;
 }
 .footer-text{
-  float: left;
-  line-height: $footer-height;
+  font: normal 14px/21px FiraSans-Light;
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  &:before{
+    content: '';
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 .footer-social{
   width: 105px;

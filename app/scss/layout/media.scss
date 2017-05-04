@@ -1,4 +1,4 @@
-/* Ноутбук:
+/* -------------Ноутбук:-------------------------------
 	Ширина экрана - 992px
     Ширина контейнера - 750px */
 @media screen and (max-width: 992px) {
@@ -24,8 +24,11 @@
     .menu__item {
         min-height: 0;
         padding: 0;
-        margin-right: 30px;
+        margin-left: 30px;
         display: inline-block;
+        &:first-child {
+            margin-left: 0;
+        }
     }
 
     .menu__item.active {
@@ -65,14 +68,20 @@
     }
 }
 
-/* Планшет
+/* -----------------Планшет----------------------------------------------
     Ширина экрана - 768px
     Ширина контейнера - 480px */
 @media screen and (max-width: 768px) {
+
+    .wrapper {
+        &:after {
+            height: 94px;
+        }
+    }
     .container {
         width: 480px;
     }
-    .contacts__title{
+    .contacts__title {
         display: none;
     }
     .contacts__title-icon {
@@ -80,7 +89,7 @@
             display: inline-block;
         }
     }
-    .contacts__detail{
+    .contacts__detail {
         left: -190px;
         &:before {
             left: 185px;
@@ -88,9 +97,6 @@
         &:after {
             left: 185px;
         }
-    }
-    .menu__item:nth-child(3) {
-        margin-right: 0;
     }
 
     .about-ava {
@@ -109,34 +115,33 @@
     .about-description__text {
         margin-right: 0;
     }
-
-    .career-description,
-    .portfolio-description {
-        width: 100%;
-        padding-left: 0;
+    .about-description__link {
+        margin-bottom: 184px;
+        margin-left: 50%;
+        transform: translateX(-86px);
+        float: none;
     }
     .career-description__title,
     .portfolio-description__title{
         text-align: center;
-        margin-bottom: 30px;
     }
-    .career-description__img{
-        margin-left: 28%;
-        margin-bottom: 10px;
+    .career-description__img {
+        margin-left: 50%;
+        transform: translateX(-115px);
     }
-    .career-description__data{
+    .career-description__data {
         width: 100%;
     }
-    .career-description__data_item{
-        width:440px;
-        &-indicator{
+    .career-description__data_item {
+        width: 440px;
+        &-indicator {
             display: none;
             &-circle,
-            &-circle-big{
+            &-circle-big {
                 display: none;
             }
         }
-        &-indicator-line{
+        &-indicator-line {
             display: none;
         }
     }
@@ -145,11 +150,25 @@
             margin-left: 20px;
         }
         &:nth-child(3),
-        &:nth-child(5){
+        &:nth-child(5) {
             margin-left: 0;
-        }}
+        }
+    }
+    .footer {
+        height: 94px;
+        margin-top: -94px;
+        text-align: center;
+    }
+    .footer-text{
+        height: 50%;
+    }
+    .footer-social {
+        width: 100%;
+        padding-top: 0;
+        float: none;
+    }
 }
-/*Телефон
+/*-------------------------------Телефон-------------------------------
     Ширина экрана - 480px и меньше
     Ширина контейнера - 95% */
 
@@ -158,14 +177,14 @@
         width: 95%;
     }
     .menu__item {
-        margin-right: 17px;
+        margin-left: 15px;
     }
-    .menu__item a{
+    .menu__item a {
         font-size: 14px;
     }
     .menu__item a.me:before,
     .menu__item a.path:before,
-    .menu__item a.portf:before{
+    .menu__item a.portf:before {
         display: none;
     }
 
@@ -175,24 +194,37 @@
         padding-left: 0;
     }
     .career-description__title,
-    .portfolio-description__title{
+    .portfolio-description__title {
         text-align: center;
         margin-bottom: 30px;
     }
     .career-description__data_item {
         width: 100%;
+        min-height: 110px;
+        max-height: none;
     }
 
-    .portfolio__data_item{
+    .portfolio__data_item {
         float: none;
-        margin-left: 0;
-        &:nth-child(4){
-            margin-left: 0;
+        margin-left: 50%;
+        transform: translateX(-110px);
+        &:nth-child(1),
+        &:nth-child(3),
+        &:nth-child(4),
+        &:nth-child(5) {
+            margin-left: 50%;
+            transform: translateX(-110px);
         }
     }
-    .footer-text{
-        display: none;
-        line-height: $footer-height;
+    .footer-text {
+        height: 30%;
+        margin-top: 10px;
+        &:before {
+            height: 60%;
+        }
+    }
+    .footer-social {
+        margin-top: 15px;
     }
 }
 
