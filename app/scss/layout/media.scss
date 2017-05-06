@@ -90,23 +90,28 @@
         }
     }
     .contacts__detail {
-        left: -190px;
+        left: -175px;
         &:before {
-            left: 185px;
+            left: 170px;
         }
         &:after {
-            left: 185px;
+            left: 170px;
         }
     }
-
+    .navigation{
+        float: none;
+    }
     .about-ava {
-        margin-left: 28%;
+        margin-left: 50%;
+        transform: translate(-88px);
         margin-bottom: 20px;
+        float: none;
     }
 
     .about-description {
-        display: block;
         width: 100%;
+        display: block;
+        float: none;
     }
     .about-description__title {
         text-align: center;
@@ -116,7 +121,6 @@
         margin-right: 0;
     }
     .about-description__link {
-        margin-bottom: 184px;
         margin-left: 50%;
         transform: translateX(-86px);
         float: none;
@@ -128,6 +132,7 @@
     .career-description__img {
         margin-left: 50%;
         transform: translateX(-115px);
+        margin-bottom: 20px;
     }
     .career-description__data {
         width: 100%;
@@ -176,10 +181,15 @@
     .container {
         width: 95%;
     }
-    .menu__item {
-        margin-left: 15px;
+    .person__name{
+        max-width: 100px;
+        font: normal 14px/21px FiraSans-Regular;
     }
-    .menu__item a {
+    .menu__item {
+        margin-left: 20px;
+    }
+    .menu__item a,
+    .menu__item.active a {
         font-size: 14px;
     }
     .menu__item a.me:before,
@@ -196,7 +206,7 @@
     .career-description__title,
     .portfolio-description__title {
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     .career-description__data_item {
         width: 100%;

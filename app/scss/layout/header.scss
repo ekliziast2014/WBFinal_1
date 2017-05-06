@@ -22,11 +22,12 @@
 }
 
 .person__name {
+    max-width: 165px;
     margin-top:0;
     margin-left: 10px;
     display: inline-block;
+    vertical-align: middle;
     font: 600 18px/28px FiraSans-Regular;
-    text-align: left;
 }
 
 .contacts {
@@ -60,10 +61,10 @@
 /* -------выпадашка------- */
 
 .contacts__detail{
-    width: 230px;
+    width: 210px;
     position: absolute;
     top: 70px;
-    left: -108px;
+    left: -45px;
     color: $blue;
     background: #ffffff;
     border: 1px solid #dedede;
@@ -77,7 +78,7 @@
             height: 0;
             position: absolute;
             top: -12px;
-            left: 109px;
+            left: 98px;
             border-bottom: 12px solid #dedede;
             border-right: 12px solid transparent;
             border-left: 12px solid transparent;
@@ -89,7 +90,7 @@
             height: 0;
             position: absolute;
             top: -11px;
-            left: 109px;
+            left: 98px;
             border-bottom: 12px solid #ffffff;
             border-right: 12px solid transparent;
             border-left: 12px solid transparent;
@@ -103,10 +104,11 @@
     line-height: 44px;
     list-style: none;
     padding: 10px;
+    border-bottom: 1px solid #dedede;
     a {
         display: block;
         text-decoration: none;
-        font: normal 18px/24px FiraSans-Regular;
+        font: normal 18px/28px FiraSans-Light;
         color: $blue;
         &.post:before {
             content: "\f0e0";
