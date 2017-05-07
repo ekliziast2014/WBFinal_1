@@ -11,7 +11,7 @@
 .about-description {
     width: 40.4%;
     display: inline-block;
-    float: right;
+    margin-left: 55px;
 }
 .about-description__title{
     margin: -3px 0 20px 0;
@@ -44,7 +44,7 @@
     height: 40px;
     color: $red;
     padding: 5px 0;
-    margin-bottom: 74px;
+    margin-bottom: 30px;
     font: bold 15px/28px "FiraSans-Bold" ;
     text-align: center;
     text-decoration: none;

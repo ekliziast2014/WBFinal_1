@@ -138,7 +138,8 @@
         width: 100%;
     }
     .career-description__data_item {
-        width: 440px;
+        max-width: 440px;
+        margin: 0 auto 20px;
         &-indicator {
             display: none;
             &-circle,
@@ -185,6 +186,9 @@
         max-width: 100px;
         font: normal 14px/21px FiraSans-Regular;
     }
+    .menu {
+        text-align: center;
+    }
     .menu__item {
         margin-left: 20px;
     }
@@ -209,7 +213,6 @@
         margin-bottom: 20px;
     }
     .career-description__data_item {
-        width: 100%;
         min-height: 110px;
         max-height: none;
     }
