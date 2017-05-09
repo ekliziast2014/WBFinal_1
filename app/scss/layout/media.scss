@@ -63,9 +63,6 @@
     .career-description__img {
         width: 230px;
     }
-    .career-description__data {
-        width: 45%;
-    }
 }
 
 /* -----------------Планшет----------------------------------------------
@@ -141,6 +138,7 @@
     .career-description__data_item {
         max-width: 440px;
         margin: 0 auto 20px;
+        float: none;
         &-indicator {
             display: none;
             &-circle,
