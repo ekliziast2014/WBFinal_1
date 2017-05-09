@@ -38,6 +38,12 @@
     &:hover .contacts__detail{
         display: block;
     }
+    &:hover .contacts__title{
+        color: $red;
+        border-bottom: 2px dotted $red;
+        transition: all .3s
+    }
+
 }
 
 .contacts__title {
@@ -46,10 +52,6 @@
     color: $blue;
     border-bottom: 2px dotted $blue;
     cursor: pointer;
-    &:hover{
-        color: $red;
-        border-bottom: 2px dotted $red;
-        }
     }
 
 .contacts__title-icon:before{

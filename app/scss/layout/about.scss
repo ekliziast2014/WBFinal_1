@@ -52,6 +52,7 @@
     border: 2px solid $red;
     border-radius: 20px;
     float: right;
+    transition: all .5s;
     &:hover {
         background: $red;
         color: #ffffff;
