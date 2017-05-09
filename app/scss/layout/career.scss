@@ -20,15 +20,17 @@
     float: left;
 }
 .career-description__data{
-    width: 54%;
+    width: 56%;
     list-style: none;
     float: right;
 }
 
 .career-description__data_item{
+    max-height: 110px;
+    max-width: 380px;
+    float: right;
     margin-bottom: 20px;
     position: relative;
-    max-height: 110px;
     background: #ffffff;
     padding: 15px 20px;
     border-radius: 10px;
