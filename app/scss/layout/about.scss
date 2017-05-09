@@ -11,7 +11,7 @@
 .about-description {
     width: 40.4%;
     display: inline-block;
-    float: right;
+    margin-left: 55px;
 }
 .about-description__title{
     margin: -3px 0 20px 0;
@@ -55,6 +55,7 @@
     &:hover {
         background: $red;
         color: #ffffff;
+        transition: all .5s;
     }
     &:before {
         font: bold 15px/28px FontAwesome;
